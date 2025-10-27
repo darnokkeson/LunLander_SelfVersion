@@ -1,0 +1,42 @@
+using UnityEngine;
+using UnityEngine.InputSystem;
+
+public class Lander : MonoBehaviour
+{
+    private Rigidbody2D landerRigidbody2D;
+
+    // References for this one Game Object
+    private void Awake() {
+        landerRigidbody2D = GetComponent<Rigidbody2D>();
+    }
+
+    // External References (not in this Game Object)
+    private void Start() {
+        
+    }
+
+    // Special method working with physics (BUT NOT FOR MOUSE CLICKs)
+    // Project Setting/Time/Fixed Timestep - refresh rate of physics move
+    private void FixedUpdate()
+    {
+        if (Keyboard.current.upArrowKey.isPressed) {
+            float force = 700f;
+            // adding force depending of rotation
+            landerRigidbody2D.AddForce(force * transform.up * Time.deltaTime);
+        }
+        if (Keyboard.current.leftArrowKey.isPressed) {
+            float turnSpeed = +100f;
+            // rotate to right
+            landerRigidbody2D.AddTorque(turnSpeed * Time.deltaTime);
+        }
+        if (Keyboard.current.rightArrowKey.isPressed) {
+            float turnSpeed = -100f;
+            // rotate to right
+            landerRigidbody2D.AddTorque(turnSpeed * Time.deltaTime);
+        }
+    }
+
+    private void Update() {
+
+    }
+}
