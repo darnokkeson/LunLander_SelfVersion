@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 3015163725126902140}
   - component: {fileID: 8762113113163472691}
   - component: {fileID: 1030255395839163814}
+  - component: {fileID: 8302851129326473007}
   m_Layer: 0
   m_Name: LandingPad
   m_TagString: Untagged
@@ -95,6 +96,19 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::LandingPad
   scoreMultiplier: 1
+--- !u!114 &8302851129326473007
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 312233727089905365}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: daa4f3aa38bb5234bbc89ae992b8672b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::LandingPadVisual
+  scoreMultiplierTextMesh: {fileID: 8778194963862332513}
 --- !u!1 &4863146625787321932
 GameObject:
   m_ObjectHideFlags: 0

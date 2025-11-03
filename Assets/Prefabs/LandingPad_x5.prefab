@@ -12,6 +12,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: LandingPad_x5
       objectReference: {fileID: 0}
+    - target: {fileID: 580395128300789594, guid: c67db07a3b8c8fb4cae8e342f7f89c71, type: 3}
+      propertyPath: m_DynamicOccludee
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 1030255395839163814, guid: c67db07a3b8c8fb4cae8e342f7f89c71, type: 3}
       propertyPath: scoreMultiplier
       value: 5
